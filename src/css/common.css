@@ -1,0 +1,57 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/*h1,h2,h3,h4,h5,h6,
+p,div,figure,figcaption,{
+	
+}*/
+a{
+	text-decoration: none;
+}
+ul,li,ol{
+    list-style:none;
+}
+em,i{
+	font-style: normal;
+}
+/*去掉input等聚焦时的蓝色边框*/
+fieldset, img,input,button {
+    border:0 none;
+    padding:0;
+    margin:0;
+    outline-style:none;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+/*  当a标签嵌套img,在IE6里会出现蓝色边框 方法：border:0 none;*/
+img {
+    border:0 none;
+    /*vertical-align:middle;*/
+}  
+
+/*清除浮动（不管）*/
+.clearfix:before,.clearfix:after {  /*清楚浮动*/
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.ac{
+    text-align:center;
+}
+.con{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
